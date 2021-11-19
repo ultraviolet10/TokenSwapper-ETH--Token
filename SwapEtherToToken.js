@@ -20,7 +20,7 @@ process.on('unhandledRejection', function(reason, p) {
 
 // Trade Details
 const SRC_DECIMALS = 18;
-const SRC_QTY = "1"; //0.5 Ether
+const SRC_QTY = "1"; //1 Ether
 const SRC_QTY_WEI = (SRC_QTY * 10 ** SRC_DECIMALS).toString();
 
 web3.eth.accounts.wallet.add(WALLET_PRIVATE_KEY);
