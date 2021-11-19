@@ -1,0 +1,88 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "contract KyberNetworkProxy",
+				"name": "_kyberProxy",
+				"type": "address"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "sender",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "contract ERC20",
+				"name": "destToken",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "destination",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "Swap",
+		"type": "event"
+	},
+	{
+		"inputs": [],
+		"name": "checkGas",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "kyberProxy",
+		"outputs": [
+			{
+				"internalType": "contract KyberNetworkProxy",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "contract ERC20",
+				"name": "token",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "destAddress",
+				"type": "address"
+			}
+		],
+		"name": "swap",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	}
+]
