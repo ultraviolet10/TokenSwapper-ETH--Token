@@ -6,7 +6,7 @@ Code uses a smart contract deployed to the Rinkeby test network.
 To use:
 - run  `npm install`
 - Set variables as necessary in the `config.js` file in `config` folder.
-- Run node SwapEtherToToken.js
+- Run `node SwapEtherToToken.js`
 
 
 Notes:
