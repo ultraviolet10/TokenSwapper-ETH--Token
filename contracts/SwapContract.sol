@@ -30,9 +30,9 @@ contract TokenSwap {
         //will send back tokens to this contract's address
         uint destAmount = kyberProxy.swapEtherToToken{value: msg.value}(token, minConversionRate);
         
-        token.transfer(destAddress, destAmount);
-        
         //send received tokens to destination address
+        token.transfer(destAddress, destAmount);
+       
         emit Swap(msg.sender, token, destAddress, destAmount);
         
     }
